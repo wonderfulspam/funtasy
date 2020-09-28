@@ -4,9 +4,30 @@
 <style>
 .funtasy {
 	height: 730px;
-	width: 560px;
+	width: 24.5%;
+}
+
+.livescore {
+	height: 470px !important;
+	position: absolute;
+}
+
+body {
+	background-image: url(./bg.jpg);
+	height: 100%;
+	overflow-y: hidden;
+}
+
+
+#gif-wrap {
+	display: inline-block;
+	width: 24.5%;
+	height: 24.5%;
+	background-size: contain;
 }
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"/></script>
+<script type="text/javascript" src="script.js"/></script>
 	</head>
 	<body>
 		<iframe sandbox=
@@ -22,6 +43,7 @@
 			"allow-scripts allow-same-origin allow-top-navigation allow-forms allow-popups allow-pointer-lock allow-popups-to-escape-sandbox"
 			class="funtasy"
 			src="https://rsoccer.live/"></iframe>
-
+	<iframe scrolling="no" class="funtasy livescore" src="https://www.fctables.com/england/premier-league/iframe/?type=league-scores&lang_id=2&country=67&template=10&team=180231&timezone=Europe/Copenhagen&time=24&width=520&height=440&font=Verdana&fs=12&lh=22&bg=FFFFFF&fc=333333&logo=1&tlink=1&scoreb=f4454f&scorefc=FFFFFF&sgdcoreb=8f8d8d&sgdcorefc=FFFFFF&sh=1&hfb=1&hbc=3bafda&hfc=FFFFFF"></iframe>
+	<div id="gif-wrap"></div>
 	</body>
 </html>
